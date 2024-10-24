@@ -220,21 +220,53 @@
 <script>
     const questions = {
         C: [
-            { question: "What is the correct syntax to print 'Hello World' in C?", options: ["print('Hello World')", "echo 'Hello World'", "Console.WriteLine('Hello World')", "printf('Hello World');"], answer: 3 }
-        ],
+            { question: "What is the correct syntax to print 'Hello World' in C?", options: ["print('Hello World')", "echo 'Hello World'", "Console.WriteLine('Hello World')", "printf('Hello World');"], answer: 3 },
+
+{"question": "Which of the following is used to declare a variable in C?", "options": ["let x = 5;", "int x = 5;", "var x : int = 5;", "declare x = 5;"], "answer": 1},
+
+{"question": "What operator is used to add two numbers in C?", "options": ["+", "add", "plus", "->"], "answer": 0},
+
+{"question": "Which of the following is the correct way to define a function in C?", "options": ["function myFunc() {}", "void myFunc() {}", "def myFunc():", "myFunc() {}"], "answer": 1},
+
+{"question": "What is the correct syntax for a for loop in C?", "options": ["for (i = 0; i < 10; i++) {}", "for i in range(10) {}", "for (i < 10; i++) {}", "loop for i = 0 to 10 {}"], "answer": 0}
+
+ ],
         Java: [
-            { question: "What is the correct way to declare a variable in Java?", options: ["int x = 10;", "var x = 10;", "let x = 10;", "x := 10;"], answer: 0 }
-        ],
+            { question: "What is the correct way to declare a variable in Java?", options: ["int x = 10;", "var x = 10;", "let x = 10;", "x := 10;"], answer: 0 },
+            {"question": "Which of the following is a valid declaration of a String variable in Java?", "options": ["String s = 'Hello';", "String s = \"Hello\";", "String s = Hello;", "String s = \"Hello;\""], "answer": 1},
+
+{"question": "What is the correct way to create a constructor in Java?", "options": ["public MyClass() {}", "void MyClass() {}", "MyClass() {}", "constructor MyClass() {}"], "answer": 0},
+
+{"question": "Which keyword is used to inherit a class in Java?", "options": ["extends", "inherits", "implements", "instanceof"], "answer": 0},
+
+{"question": "What is the output of System.out.println(3 + 4 + \"Hello\");?", "options": ["34Hello", "7Hello", "Hello7", "Error"], "answer": 1}   ],
         HTML: [
-            { question: "What does HTML stand for?", options: ["HyperText Markup Language", "HighText Markup Language", "HyperText MultiLanguage", "HighText MultiLanguage"], answer: 0 }
-        ],
+            { question: "What does HTML stand for?", options: ["HyperText Markup Language", "HighText Markup Language", "HyperText MultiLanguage", "HighText MultiLanguage"], answer: 0 },
+            {"question": "Which tag is used to create a hyperlink in HTML?", "options": ["<link>", "<a>", "<href>", "<hyperlink>"], "answer": 1},
+
+{"question": "What does the <h1> tag represent in HTML?", "options": ["A heading", "A paragraph", "An image", "A link"], "answer": 0},
+
+{"question": "Which attribute is used to specify the URL in an <img> tag?", "options": ["src", "href", "url", "link"], "answer": 0},
+
+{"question": "What is the correct HTML for adding a background color?", "options": ["<body style='background-color: blue;'>", "<body bg='blue'>", "<body background='blue'>", "<body color='blue'>"], "answer": 0} ],
         Python: [
-            { question: "What is the correct syntax to output 'Hello World' in Python?", options: ["print('Hello World')", "echo 'Hello World'", "Console.WriteLine('Hello World')", "printf('Hello World');"], answer: 0 }
-            
-        ],
+            { question: "What is the correct syntax to output 'Hello World' in Python?", options: ["print('Hello World')", "echo 'Hello World'", "Console.WriteLine('Hello World')", "printf('Hello World');"], answer: 0 },
+            {"question": "What is the correct way to declare a variable in Python?", "options": ["var x = 5", "int x = 5", "x = 5", "declare x = 5"], "answer": 2},
+
+{"question": "Which of the following is used to define a function in Python?", "options": ["def myFunction():", "function myFunction():", "define myFunction():", "myFunction() = function:"], "answer": 0},
+
+{"question": "What will be the output of print(type(5)) in Python?", "options": ["<class 'int'>", "<type 'int'>", "int", "Integer"], "answer": 0},
+
+{"question": "Which keyword is used to create an empty list in Python?", "options": ["[]", "()", "{}", "list()"], "answer": 0}],
         CSS: [
-            { question: "Which CSS property controls the text size?", options: ["font-size", "text-size", "text-style", "font-weight"], answer: 0 }
-        ]
+            { question: "Which CSS property controls the text size?", options: ["font-size", "text-size", "text-style", "font-weight"], answer: 0 },
+            {"question": "Which property is used to change the background color in CSS?", "options": ["background-color", "color", "bgcolor", "background"], "answer": 0},
+
+{"question": "What is the correct syntax for applying a class in CSS?", "options": [".classname {}", "#classname {}", "classname {}", "class: classname {}"], "answer": 0},
+
+{"question": "How do you select an element with the id 'header' in CSS?", "options": ["#header {}", ".header {}", "header {}", "id: header {}"], "answer": 0},
+
+{"question": "Which CSS property controls the text size?", "options": ["font-size", "text-size", "size", "font"], "answer": 0}]
     };
 
     let currentQuestionIndex = 0;
